@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/portada.css">
     <title>Nela Nails Art</title>
   </head>
   <body>
     <section class="portada">
-      <button class="left-button" type="button"></button>
-      <button class="right-button" type="button"></button>
+      <button class="left-button icon-circle-left" type="button" id = "leftButton"></button>
+      <button class="right-button icon-circle-right" type="button" id = "rightButton"></button>
       <div class="portada-contenido">
-        <!--contiene las imagenes dle carrusel  -->
+        <div class="div-img">
+          <img src="assets/img/portada/nails1.jpg" id = "firstImg" class = "img-nail" alt="">
+        </div>
+        <div class="div-img">
+          <img src="assets/img/portada/nails2.jpg" id = "secondImg" class = "img-nail" alt="">
+        </div>
+        <div class="div-img">
+          <img src="assets/img/portada/nails3.jpg" id = "thirdImg" class = "img-nail" alt="">
+        </div>
       </div>
     </section>
-
+    <script src="assets/js/portada.js" charset="utf-8"></script>
   </body>
 </html>
