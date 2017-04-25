@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/portada.css">
+    <link rel="stylesheet" href="assets/css/comment.css">
     <title>Nela Nails Art</title>
   </head>
   <body id = "body">
@@ -18,8 +20,26 @@
         <img src="assets/img/newHeader/Relax Renew Revitalize.jpg" alt="" class = "portada-img">
       </section>
 
+      <section class="contactanos">
+        <div class="contact-content">
+          <h2 id = "titulo">Contáctanos</h2>
+          <div class="form">
+            <label for="fullName">Nombre:</label>
+            <input id = "fullName" type="text" class= "input-box" value="">
+            <br><br>
+            <label for="correo">Correo:</label>
+            <input id = "correo" type="text" class = "input-box" value="">
+            <br><br>
+            <label for="comentario">Comentario:</label><br><br>
+            <textarea id = "comentario" class = "input-box" name="name" rows="8" cols="80"></textarea>
+            <br><br>
+            <button type="button" class="btn-submit" name="button">Enviar</button>
+          </div>
+        </div>
+      </section>
+      <footer></footer>
     </section>
-
     <script src="assets/js/portada.js" charset="utf-8"></script>
+    <script src="assets/js/comment.js" charset="utf-8"></script>
   </body>
 </html>
