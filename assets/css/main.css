@@ -1,38 +1,119 @@
-*{
+* {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+ }
 
-html,body{
-  background-color: rgb(231, 222, 227);
+html, body{
+  background-color: rgb(228, 224, 231);
+}
+a{
+  text-decoration: none;
 }
 
 nav{
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
-  margin-top: 0;
-  padding-top: 0;
-  position: fixed;
-  background: rgba(247, 45, 136, 0.95);
+  color: #fff;
+  height: 80px;
   z-index: 1000;
+  margin-top: 0;
+  position: fixed;
+  padding-top: 0px;
+  background: rgba(247, 45, 136, 0.95);
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
 
-a{
-  text-decoration: none;
+.header-in{
+  background-color: white;
 }
 
-#logo,#menu{
+nav .nav-background {
+  top: 0px;
+  right: 0;
+  opacity:0;
+  width: 30%;
+  height: 100vh;
+  z-index: 1500;
+  display: table;
+  background: none;
+  position: absolute;
+  transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+nav.open .nav-background {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.92)!important;
+  transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+
+nav.open {
+  height: 100vh;
+  transition: none;
+  -o-transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
+
+nav ul {
+  top: -10%;
+  padding: 0;
+  opacity: 0;
+  width: 100%;
+  visibility: hidden;
+  display: table-cell;
+  vertical-align: middle;
+  transform: perspective(600px) rotateX(10deg);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+}
+
+nav ul li{
+  visibility: hidden;
+  list-style: none;
+}
+
+nav ul li a{
+  color: black;
+  width: 100%;
+  display: block;
+  padding: 8px 0 0;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  letter-spacing: -0.001em;
+}
+nav ul li a:hover{
+  color:#ec008c;
+  background-color: none;
+  transform: matrix(1, 0, 0.5, 1, 5, 1);
+  padding-right: 30px;
+  pointer-events: all;
+  cursor: pointer;
+}
+nav.open ul {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  padding-right: 20px;
+  margin-top: 0;
+  visibility: visible;
+  transform: perspective(600px) rotateX(0deg);
+}
+nav.open ul li {
+  color: black;
+  text-align: right;
+  font-size: 60px;
+  visibility: visible !important;
+}
+
+.logo,
+.menu{
   position: absolute;
   z-index: 2000;
 }
-
-#logo{
+.logo{
   left: 40%;
   top: 8px;
   font-family: 'Lobster', cursive;
@@ -43,27 +124,33 @@ a{
 }
 
 .menu{
-  top: 35px;
-  right: 0;
+  top:0;
+  right:0;
   height: 4px;
-  width: 30px;
+  width: 24px;
   text-align: right;
-  margin: 2px;
+  margin: 2rem 2rem;
   background: black;
   transition: all 0.3s;
+  pointer-events: stroke;
 }
 
-.menu::before{
+.menu:before{
   top: -8px;
 }
-
-.menu::after{
+.menu:after{
   top: 8px;
 }
-
-.menu::before, .menu::after{
-  content: "";
-  width: 30px;
+#toggle:hover:before {
+  top: -9px;
+}
+#toggle:hover:after {
+  top: 9px;
+}
+.menu:before,
+.menu:after{
+  content: '';
+  width: 24px;
   height: 4px;
   z-index: -1;
   display: block;
@@ -71,70 +158,30 @@ a{
   background: black;
   transition: all 0.3s;
 }
-
-#menu:hover::before{
-  top: -9px;
+#toggle:hover {
+  transition: top 0.4s;
 }
 
-#menu:hover::after{
-  top: 9px;
+.solid #toggle .menu {
+  background: black;
+}
+.solid #toggle .menu:after{
+  background-color: black;
+}
+.solid #toggle .menu:before{
+  background-color: black;
 }
 
-.despliega .menu{
+.open .menu {
   background: none !important;
 }
-
-.despliega .menu::after{
+.open .menu:after {
   top: 0 !important;
   background: black !important;
   transform: rotate(45deg);
 }
-
-.despliega .menu::before{
+.open .menu:before {
   top: 0 !important;
   background: black !important;
   transform: rotate(-45deg);
-}
-
-nav .nav-menu{
-  width: 100%;
-  height: 100%;
-  display: table;
-  z-index: 1500;
-  background: none;
-  position: absolute;
-  top: 0;
-  opacity: 0;
-  transition: background-color 0.6s cubic-bezier(0.7, 0.01,0.3,1);
-}
-
-nav .despliega .nav-menu{
-  background-color: rgba(255, 255, 255, 0.92) !important;
-  opacity: 1;
-  transition: background-color 0.6s cubic-bezier(0.7, 0.01,0.3,1);
-}
-
-nav .despliega{
-  height: 100%;
-  transition: none;
-  -o-transition: none;
-  -moz-transition: none;
-  -webkit-transition: none;
-}
-
-nav ul{
-  width: 100%;
-  padding: 0;
-  opacity: 0;
-  top: -10%;
-  text-align: right;
-  visibility: hidden;
-  display: table-cell;
-  vertical-align: middle;
-  transform: perspective(600px) rotateX(10deg);
-  transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
-}
-
-nav ul li{
-  visibility: hidden;
 }
