@@ -1,8 +1,17 @@
 
 window.addEventListener("load", function(){
+  var timeLoad = setTimeout(showPage, 3000);
   slideShow();
 
 });
+//funcion del loading
+function showPage() {
+  var load = document.getElementsByClassName("loading")[0];
+  load.classList.add("fadeOut");
+  document.getElementById("allPage").style.display = "block";
+
+}
+//funcion que confirma si quieres salir de la pagina
 window.onbeforeunload = preguntarSalir;
 var pregunta = true;
 function preguntarSalir(){
