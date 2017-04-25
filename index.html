@@ -23,18 +23,24 @@
       <section class="contactanos">
         <div class="contact-content">
           <h2 id = "titulo">Contáctanos</h2>
-          <div class="form">
-            <label for="fullName">Nombre:</label>
-            <input id = "fullName" type="text" class= "input-box" value="">
+          <form class="form">
+            <div class="input-box">
+              <label for="fullName">Nombre:</label>
+              <input id = "fullName" type="text" value="">
+            </div>
             <br><br>
-            <label for="correo">Correo:</label>
-            <input id = "correo" type="text" class = "input-box" value="">
+            <div class="input-box">
+              <label for="correo">Correo:</label>
+              <input id = "correo" type="text" value="">
+            </div>
             <br><br>
-            <label for="comentario">Comentario:</label><br><br>
-            <textarea id = "comentario" class = "input-box" name="name" rows="8" cols="80"></textarea>
+            <div class="input-box">
+              <label for="comentario">Comentario:</label><br><br>
+              <textarea id = "comentario" name="name" rows="8" cols="80"></textarea>
+            </div>
             <br><br>
-            <button type="button" class="btn-submit" name="button">Enviar</button>
-          </div>
+            <button type="button" id = "submit" class="btn-submit" name="button">Enviar</button>
+          </form>
         </div>
       </section>
       <footer></footer>

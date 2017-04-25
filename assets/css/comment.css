@@ -1,7 +1,7 @@
 .contactanos{
   font-family: 'Prompt', sans-serif;
   width: 35%;
-  margin: 5% auto;
+  margin: 3% auto;
   border: solid 2px #e7e7e7;
   box-shadow: 10px 10px 5px rgba(61,156,232,0.5);
 }
@@ -56,7 +56,6 @@
   border-color: #008CBA;
 }
 .input-box {
-  margin-bottom: 10px;
   position: relative;
 }
 .input-box span{
