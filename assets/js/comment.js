@@ -1,9 +1,15 @@
 var element = document.getElementById("submit");
+var fullName = document.getElementById("fullName");
+fullName.onblur = changeUpperCase;
+
 element.addEventListener("click", function(event){
   event.preventDefault();
   validation();
 });
-
+//evento onblur para nombre
+function changeUpperCase(){
+  this.value = this.value.toUpperCase();
+}
 //crea el tooltip
 function createTooltip(mensaje){
   var span = document.createElement("span");
@@ -31,30 +37,23 @@ function validation(){
   var fullName = document.getElementById("fullName");
   var mail = document.getElementById("correo");
   var comment = document.getElementById("comentario");
-  var testName = /[A-Z]{1,}[a-z]+/;
+  var testName = /[a-z]/;
   var testEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.com$/;
   var mensaje = "";
-
+  var c = 0;
    if(fullName.value == ""){
       if(fullName.nextElementSibling == null){
         divBox[0].appendChild(createTooltip("Falta ingresar su nombre"));
       }
     }else{
-      if(!fullName.value.match(testName)){
-        mensaje = "La primera letra con mayúscula";
-        changeTooltip(fullName,mensaje);
-        fullName.focus();
-      }else{
         quitTooltip(fullName);
-
-      }
+        c++;
     }
 
     if(mail.value == ""){
       if(mail.nextElementSibling == null){
         divBox[1].appendChild(createTooltip("Falta ingresar su email"));
       }
-
     }else{
         if(!mail.value.match(testEmail)){
           mensaje = "El Email debe ser válido Ejm. name@domain.com \n ";
@@ -62,7 +61,7 @@ function validation(){
           mail.focus();
         }else{
           quitTooltip(mail);
-
+          c++;
         }
     }
 
@@ -72,7 +71,12 @@ function validation(){
       }
     }else{
       quitTooltip(comment);
+      c++;
     }
 
-    
+    if(c==3){
+        fullName.value = "";
+        mail.value = "";
+        comment.value = "";
+    }
 }
