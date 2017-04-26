@@ -77,7 +77,6 @@ position: relative;
   margin:30px 50px;
 }
 
-
 #modal {
   position: fixed;
     display: none;
@@ -98,9 +97,9 @@ position: relative;
 
 .close {
   position: absolute;
-    top: 0px;
-    right: 15px;
-    color: black;
+    top: 70px;
+    right: 380px;
+    color: rgba(62,207,158,0.8);
     font-size: 54px;
     cursor: pointer;
 }

@@ -4,8 +4,6 @@ window.addEventListener('load',function() {
 /**Para uñas acrilicas*/
 acrilicas.addEventListener('click',function(evento) {
 evento.preventDefault();
-
-
 document.getElementById("modal").style.display ="block";
 for (var i = 1; i <=58; i++)
 {
@@ -19,25 +17,7 @@ div.appendChild(img);
 contenedor.appendChild(div);
 }
 });
-/*
-function buscarCarpeta(){
-  switch (Diseño_de_Uñas) {
-    case("acrilicas"):
-    var img=("assets/img/acrilicas/img"+i+".jpg");
-    break;
-    case("postizas"):
-    var img=("assets/img/postizas/im"+i+".jpg");
-    break;
-    case("tip"):
-    var img=("assets/img/postizas/imag"+i+".jpg");
-    break;
-    case("normal"):
-    var img=("assets/img/normal/imagen"+i+".jpg");
-    break;
-    default:
-    alert("no se encuentra la imagen");
-  }
-}*/
+
 /**Para uñas postizas*/
 postizas.addEventListener('click',function(evento) {
 evento.preventDefault();
