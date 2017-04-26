@@ -33,15 +33,15 @@
 }
 .left-button{
   top: 45%;
-  left: 4%;
+  left: 2%;
   z-index: 1;
 }
 .right-button{
   top: 45%;
-  right: 4%;
+  right: 2%;
   z-index: 1;
 }
-.content{
+.modal-content{
   width: 90%;
   position: relative;
   top: 16%;
@@ -62,17 +62,20 @@
 .hidden{
   overflow: hidden;
 }
+.hidden #body{
+  z-index: -2;
+}
 .close{
   color: #f4858e;
   font-size: 50px;
   font-weight: bold;
   position: absolute;
-  right: 3%;
-  top: 3%;
+  right: 2%;
+  top: -20%;
+  cursor: pointer;
 }
-.close:hover,
-.close:focus {
-    color: green;
-    text-decoration: none;
-    cursor: pointer;
+
+.change-color{
+  text-decoration: none;
+  color: green;
 }

@@ -1,6 +1,6 @@
 
 window.addEventListener("load", function(){
-  var timeLoad = setTimeout(showPage, 3000);
+  var timeLoad = setTimeout(showPage, 2500);
   slideShow();
 
 });

@@ -30,7 +30,6 @@
 #video_player figcaption a img, figure video {
   width: 85%;
 }
-
 @media(){
   #video_player video, #video_player figcaption {
 }

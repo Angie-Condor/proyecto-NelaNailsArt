@@ -8,6 +8,9 @@
   var close = document.getElementById("close");
   var actualImg = 1;
 
+  close.onmouseenter = cambiarColor;
+  close.onmouseleave = colorNormal;
+
   for(i=0; i<nailsType.length; i++){
     nailsType[i].onclick = createdModal;
   }
@@ -78,4 +81,11 @@ function buscarCarpeta(tipo){
     default:
   }
   return length;
+}
+
+function cambiarColor(){
+  close.classList.add("change-color");
+}
+function colorNormal(){
+  close.classList.remove("change-color");
 }

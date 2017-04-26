@@ -1,6 +1,7 @@
 var element = document.getElementById("submit");
 var fullName = document.getElementById("fullName");
 fullName.onblur = changeUpperCase;
+fullName.onkeypress=soloLetras;
 
 element.addEventListener("click", function(event){
   event.preventDefault();
@@ -79,4 +80,12 @@ function validation(){
         mail.value = "";
         comment.value = "";
     }
+}
+function soloLetras(e){
+   var codigoTecla=e.keyCode;//document.write(codigoTecla);
+   if ((codigoTecla>=97 && codigoTecla<=122)|| (codigoTecla>=65 && codigoTecla<=90)||(codigoTecla==32 || codigoTecla==39 )){
+     return true;
+   }else{
+     return false;
+   }
 }
