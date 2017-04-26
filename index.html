@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="assets/css/portada.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/comment.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <title>Nela Nails Art</title>
   </head>
   <body id="body">
+    <div class="loading"></div>
     <header>
       <nav id="nav-header">
         <div>
@@ -22,23 +24,74 @@
         </div>
         <div id="nav-background" class="nav-background">
           <ul>
-            <li><a href="#">Inicio.</a></li>
-            <li><a href="#">Servicios.</a></li>
+            <li><a href="#portada">Inicio.</a></li>
+            <li><a href="#galeria">Escoge tu diseño.</a></li>
             <li><a href="#">Hazlo tú misma.</a></li>
-            <li><a href="#">Contáctanos.</a></li>
+            <li><a href="#contactanos">Contáctanos.</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <div class="loading"></div>
+    <section class="portada" id="portada">
+      <img src="assets/img/newHeader/avilaportada.jpg" alt="" class="portada-img">
+      <img src="assets/img/newHeader/tlmd_esmalte_unas_portada.jpg" alt="" class = "portada-img">
+      <img src="assets/img/newHeader/nails-esculpidas.jpg" alt="" class = "portada-img">
+      <img src="assets/img/newHeader/Relax Renew Revitalize.jpg" alt="" class = "portada-img">
+    </section>
+    <section class="galeria" id="galeria">
+      <div class="container">
+        <div class="box c1">
+          <h1>UÑAS ACRILICAS</h1>
+        </div>
+        <div class="box c2">
+          <h1>UÑAS POSTIZAS</h1>
+        </div>
+        <div class="box c3">
+          <h1>UÑAS CON TIPS</h1>
+        </div>
+        <div class="box c4">
+          <h1>UÑAS NATURALES</h1>
+        </div>
+      </div>
+      <div class="imgs_totales">
+        <div class="img-box">
+          <img src="assets/img/nailsTypes/acrilicas/img26.jpg" class= "imge ua" alt="">
+          <input type="button" name="" value="VER PRODUCTOS" class="vp acrilicas" id="acrilicas">
+        </div>
+        <div  class="img-box">
+          <img src="assets/img/nailsTypes/postizas/img15.jpg" class= "imge up" alt="">
+          <input type="button" name="" value="VER PRODUCTOS" class="vp postizas" id="postizas">
+        </div>
+        <div class="img-box left">
+          <img src="assets/img/nailsTypes/tip/img15.jpg" class= "imge ut" alt="">
+          <input type="button" name="" value="VER PRODUCTOS" class="vp tip" id="tip">
+        </div>
+        <div class="img-box">
+          <img src="assets/img/nailsTypes/normal/img10.jpg" class="imge un" alt="">
+          <input type="button" name="" value="VER PRODUCTOS" class="vp normal" id="normal">
+        </div>
+      </div>
+      <div id="modal">
+        <div class="modal-content">
+          <span id = "close" class="close">&times;</span>
+          <div class="content">
+            <div class="div-img">
+              <img id = "firstImg" class = "img-nail" alt="">
+            </div>
+            <div class="div-img">
+              <img id = "secondImg" class = "img-nail" alt="">
+            </div>
+            <div class="div-img">
+              <img id = "thirdImg" class = "img-nail" alt="">
+            </div>
+          </div>
+          <button class="left-button icon-circle-left" type="button" id = "leftButton"></button>
+          <button class="right-button icon-circle-right" type="button" id = "rightButton"></button>
+        </div>
+      </div>
+    </section>
     <section class="allPage" id = "allPage">
-      <section class="portada">
-        <img src="assets/img/newHeader/avilaportada.jpg" alt="" class="portada-img">
-        <img src="assets/img/newHeader/tlmd_esmalte_unas_portada.jpg" alt="" class = "portada-img">
-        <img src="assets/img/newHeader/nails-esculpidas.jpg" alt="" class = "portada-img">
-        <img src="assets/img/newHeader/Relax Renew Revitalize.jpg" alt="" class = "portada-img">
-      </section>
-      <section class="contactanos">
+      <section class="contactanos" id="contactanos">
         <div class="contact-content">
           <h2 id = "titulo">Contáctanos</h2>
           <form class="form">
@@ -66,5 +119,6 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="assets/js/portada.js" charset="utf-8"></script>
     <script src="assets/js/comment.js" charset="utf-8"></script>
+    <script src="assets/js/galeria.js"></script>
   </body>
 </html>

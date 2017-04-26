@@ -9,6 +9,7 @@
 
 html, body{
   background-color: rgb(228, 224, 231);
+  text-align: center;
 }
 a{
   text-decoration: none;
@@ -186,4 +187,119 @@ nav.open ul li {
   top: 0 !important;
   background: black !important;
   transform: rotate(-45deg);
+}
+
+.galeria{
+  margin: 10px 0px;
+  padding: 150px 0px;
+}
+
+.box{
+  display: inline-block;
+  width: 20%;
+  margin:9px;
+  color: white;
+  padding: 4px 30px;
+  text-align: center;
+  font-size: 10px;
+  font-family:sans-serif;
+  border-radius: 23px;
+}
+
+.c1{
+  background-color: #4b389e;
+}
+
+.c2{
+  background-color: #e50b68;
+}
+
+.c3{
+  background-color: #7066AB;
+}
+
+.c4{
+  background-color: #e4b57d;
+}
+
+.imge{
+width: 261px;
+padding: 7px;
+border-radius: 25px;
+}
+.imgs_totales{
+display: inline-flex;
+position: relative;
+left: -5%;
+}
+.img-box{
+  margin: 0 1.7%;
+  display: inline-block;
+}
+.left{
+  margin: 0 1.5%;
+}
+.vp{
+  display: inline;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  bottom: 23px;
+  margin: 1px -90px;
+  padding: 8px
+}
+.acrilicas{
+  background-color: rgb(75, 56, 158);
+  border: rgb(75, 56, 158);
+}
+
+.postizas{
+  background-color: rgb(229, 11, 104);
+  border: rgb(229, 11, 104);
+}
+.tip{
+  background-color: rgb(68, 148, 182);
+  border: rgb(68, 148, 182);
+}
+.normal{
+  background-color:rgb(228, 181, 125);
+  border: rgb(228, 181, 125);
+}
+
+.content-images{
+  display: inline-block;
+  margin: auto;
+}
+
+.imagenes{
+  width: 320px;
+  margin:30px 50px;
+}
+
+#modal {
+  position: fixed;
+    display: none;
+    padding-top: 7%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(62,207,158,0.8);
+}
+#img_modal {
+    margin: auto;
+    display: block;
+    max-width: 600px;
+    margin-top: -15px;
+    border: 12px solid white;
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  color: black;
+  font-size: 54px;
+  cursor: pointer;
 }
