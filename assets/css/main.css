@@ -24,7 +24,7 @@ nav{
   margin-top: 0;
   position: fixed;
   padding-top: 0px;
-  background: rgba(247, 45, 136, 0.95);
+  background: rgba(247, 45, 136, 0.66);
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
 
@@ -46,7 +46,7 @@ nav .nav-background {
 }
 nav.open .nav-background {
   opacity: 1;
-  background-color: rgba(255, 255, 255, 0.91)!important;
+  background-color: rgba(255, 255, 255, 0.66)!important;
   transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
 
