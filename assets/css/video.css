@@ -1,0 +1,36 @@
+#videos{
+  padding: 10px 0;
+}
+
+#video_player {
+  background: #000;
+  margin: 0 auto;
+  width: 70%;
+}
+#video_container {
+  position: relative;
+  top:0;
+  left:0;
+}
+#video_player div,
+#video_player figcaption {
+  display: table-cell;
+}
+#video_container video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;
+}
+#video_player figcaption {
+   width: 25%;
+ }
+
+#video_player figcaption a img, figure video {
+  width: 85%;
+}
+
+@media(){
+  #video_player video, #video_player figcaption {
+}

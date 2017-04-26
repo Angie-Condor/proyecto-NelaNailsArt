@@ -12,85 +12,106 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/comment.css">
     <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/video.css">
     <title>Nela Nails Art</title>
   </head>
   <body id="body">
     <div class="loading"></div>
-    <header>
-      <nav id="nav-header">
-        <div>
-          <a id="logo" class="logo" href="index.html">Nela Nails Art</a>
-          <a id="toggle" class="menu" href=""></a>
-        </div>
-        <div id="nav-background" class="nav-background">
-          <ul>
-            <li><a href="#portada">Inicio.</a></li>
-            <li><a href="#galeria">Escoge tu diseño.</a></li>
-            <li><a href="#">Hazlo tú misma.</a></li>
-            <li><a href="#contactanos">Contáctanos.</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <section class="portada" id="portada">
-      <img src="assets/img/newHeader/avilaportada.jpg" alt="" class="portada-img">
-      <img src="assets/img/newHeader/tlmd_esmalte_unas_portada.jpg" alt="" class = "portada-img">
-      <img src="assets/img/newHeader/nails-esculpidas.jpg" alt="" class = "portada-img">
-      <img src="assets/img/newHeader/Relax Renew Revitalize.jpg" alt="" class = "portada-img">
-    </section>
-    <section class="galeria" id="galeria">
-      <div class="container">
-        <div class="box c1">
-          <h1>UÑAS ACRILICAS</h1>
-        </div>
-        <div class="box c2">
-          <h1>UÑAS POSTIZAS</h1>
-        </div>
-        <div class="box c3">
-          <h1>UÑAS CON TIPS</h1>
-        </div>
-        <div class="box c4">
-          <h1>UÑAS NATURALES</h1>
-        </div>
-      </div>
-      <div class="imgs_totales">
-        <div class="img-box">
-          <img src="assets/img/nailsTypes/acrilicas/img26.jpg" class= "imge ua" alt="">
-          <input type="button" name="" value="VER PRODUCTOS" class="vp acrilicas" id="acrilicas">
-        </div>
-        <div  class="img-box">
-          <img src="assets/img/nailsTypes/postizas/img15.jpg" class= "imge up" alt="">
-          <input type="button" name="" value="VER PRODUCTOS" class="vp postizas" id="postizas">
-        </div>
-        <div class="img-box left">
-          <img src="assets/img/nailsTypes/tip/img15.jpg" class= "imge ut" alt="">
-          <input type="button" name="" value="VER PRODUCTOS" class="vp tip" id="tip">
-        </div>
-        <div class="img-box">
-          <img src="assets/img/nailsTypes/normal/img10.jpg" class="imge un" alt="">
-          <input type="button" name="" value="VER PRODUCTOS" class="vp normal" id="normal">
-        </div>
-      </div>
-      <div id="modal">
-        <div class="modal-content">
-          <span id = "close" class="close">&times;</span>
-          <div class="content">
-            <div class="div-img">
-              <img id = "firstImg" class = "img-nail" alt="">
-            </div>
-            <div class="div-img">
-              <img id = "secondImg" class = "img-nail" alt="">
-            </div>
-            <div class="div-img">
-              <img id = "thirdImg" class = "img-nail" alt="">
-            </div>
-          </div>
-          <button class="left-button icon-circle-left" type="button" id = "leftButton"></button>
-          <button class="right-button icon-circle-right" type="button" id = "rightButton"></button>
-        </div>
-      </div>
-    </section>
     <section class="allPage" id = "allPage">
+      <header>
+        <nav id="nav-header">
+          <div>
+            <a id="logo" class="logo" href="index.html">Nela Nails Art</a>
+            <a id="toggle" class="menu" href=""></a>
+          </div>
+          <div id="nav-background" class="nav-background">
+            <ul id="enlaces">
+              <li><a href="#portada">Inicio.</a></li>
+              <li><a href="#galeria">Escoge tu diseño.</a></li>
+              <li><a href="#videos">Hazlo tú misma.</a></li>
+              <li><a href="#contactanos">Contáctanos.</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="portada" id="portada">
+        <img src="assets/img/newHeader/avilaportada.jpg" alt="" class="portada-img">
+        <img src="assets/img/newHeader/tlmd_esmalte_unas_portada.jpg" alt="" class = "portada-img">
+        <img src="assets/img/newHeader/nails-esculpidas.jpg" alt="" class = "portada-img">
+        <img src="assets/img/newHeader/Relax Renew Revitalize.jpg" alt="" class = "portada-img">
+      </section>
+      <section class="galeria" id="galeria">
+        <div class="container">
+          <div class="box c1">
+            <h1>UÑAS ACRILICAS</h1>
+          </div>
+          <div class="box c2">
+            <h1>UÑAS POSTIZAS</h1>
+          </div>
+          <div class="box c3">
+            <h1>UÑAS CON TIPS</h1>
+          </div>
+          <div class="box c4">
+            <h1>UÑAS NATURALES</h1>
+          </div>
+        </div>
+        <div class="imgs_totales">
+          <div class="img-box">
+            <img src="assets/img/nailsTypes/acrilicas/img26.jpg" class= "imge ua" alt="">
+            <input type="button" name="" value="VER PRODUCTOS" class="vp acrilicas" id="acrilicas">
+          </div>
+          <div  class="img-box">
+            <img src="assets/img/nailsTypes/postizas/img15.jpg" class= "imge up" alt="">
+            <input type="button" name="" value="VER PRODUCTOS" class="vp postizas" id="postizas">
+          </div>
+          <div class="img-box left">
+            <img src="assets/img/nailsTypes/tip/img15.jpg" class= "imge ut" alt="">
+            <input type="button" name="" value="VER PRODUCTOS" class="vp tip" id="tip">
+          </div>
+          <div class="img-box">
+            <img src="assets/img/nailsTypes/normal/img10.jpg" class="imge un" alt="">
+            <input type="button" name="" value="VER PRODUCTOS" class="vp normal" id="normal">
+          </div>
+        </div>
+        <div id="modal">
+          <div class="modal-content">
+            <span id = "close" class="close">&times;</span>
+            <div class="content">
+              <div class="div-img">
+                <img id = "firstImg" class = "img-nail" alt="">
+              </div>
+              <div class="div-img">
+                <img id = "secondImg" class = "img-nail" alt="">
+              </div>
+              <div class="div-img">
+                <img id = "thirdImg" class = "img-nail" alt="">
+              </div>
+            </div>
+            <button class="left-button icon-circle-left" type="button" id = "leftButton"></button>
+            <button class="right-button icon-circle-right" type="button" id = "rightButton"></button>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <figure id="video_player">
+          <div id="video_container">
+            <video controls poster="https://instagram.flim5-2.fna.fbcdn.net/t51.2885-15/e15/10483475_1547111875611405_1923036829_n.jpg" >
+              <source src="https://instagram.flim5-2.fna.fbcdn.net/t50.2886-16/12501320_1737669103128696_1248991936_n.mp4">
+            </video>
+          </div>
+          <figcaption>
+            <a href="https://instagram.flim5-2.fna.fbcdn.net/t50.2886-16/12629881_474626166061765_418433536_n.mp4" >
+              <img src="https://instagram.flim5-2.fna.fbcdn.net/t51.2885-15/e15/12534236_913391482089343_1189261067_n.jpg" >
+            </a>
+            <a href="https://instagram.flim5-2.fna.fbcdn.net/t50.2886-16/17633264_433252297028043_381326197474197504_n.mp4">
+              <img src="https://instagram.flim5-2.fna.fbcdn.net/t51.2885-15/e15/17595994_919149018188340_7581906343154417664_n.jpg" >
+            </a>
+            <a href="https://instagram.flim5-2.fna.fbcdn.net/t50.2886-16/12572836_1510814015886594_94733397_n.mp4">
+              <img src="https://instagram.flim5-2.fna.fbcdn.net/t51.2885-15/e15/12545525_1032755846791409_338157486_n.jpg">
+            </a>
+          </figcaption>
+        </figure>
+      </section>
       <section class="contactanos" id="contactanos">
         <div class="contact-content">
           <h2 id = "titulo">Contáctanos</h2>

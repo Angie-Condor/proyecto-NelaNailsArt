@@ -116,7 +116,7 @@ nav.open ul li {
   z-index: 2000;
 }
 .logo{
-  left: 40%;
+  left: 37%;
   top: 8px;
   /*font-family: 'Lobster', cursive;*/
   font-family: 'Lobster Two', cursive;
@@ -188,10 +188,12 @@ nav.open ul li {
   background: black !important;
   transform: rotate(-45deg);
 }
-
+.overflow-hidden{
+  overflow: hidden;
+}
 .galeria{
-  margin: 10px 0px;
-  padding: 150px 0px;
+  margin: 5px 0 0 0;
+  padding: 150px 0 150px 0;
 }
 
 .box{
@@ -293,13 +295,4 @@ left: -5%;
     max-width: 600px;
     margin-top: -15px;
     border: 12px solid white;
-}
-
-.close {
-  position: absolute;
-  top: 0px;
-  right: 15px;
-  color: black;
-  font-size: 54px;
-  cursor: pointer;
 }
