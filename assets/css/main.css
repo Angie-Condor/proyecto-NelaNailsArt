@@ -1,13 +1,16 @@
+*{
+  box-sizing: border-box;
+}
 body{
   text-align: center;
-  margin-top:300px;
 }
 
 .box{
   display: inline-block;
+  width: 20%;
   margin:9px;
   color: white;
-  padding: 4px 42px;
+  padding: 4px 30px;
   text-align: center;
   font-size: 10px;
   font-family:sans-serif;
@@ -38,6 +41,14 @@ border-radius: 25px;
 .imgs_totales{
 display: inline-flex;
 position: relative;
+left: -5%;
+}
+.img-box{
+  margin: 0 1.7%;
+  display: inline-block;
+}
+.left{
+  margin: 0 1.5%;
 }
 .vp{
   display: inline;

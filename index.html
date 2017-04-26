@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/fotos.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/portada.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <title>Nela Nails Art</title>
   </head>
   <body id = "body">
@@ -27,48 +25,42 @@
         </div>
       </div>
       <div class="imgs_totales">
-        <div>
-        <img src="assets/img/acrilicas/img26.jpg" class= "imge ua" alt="">
+        <div class="img-box">
+        <img src="assets/img/nailsTypes/acrilicas/img26.jpg" class= "imge ua" alt="">
         <input type="button" name="" value="VER PRODUCTOS" class="vp acrilicas" id="acrilicas">
         </div>
-        <div >
-        <img src="assets/img/postizas/im15.jpg" class= "imge up" alt="">
+        <div  class="img-box">
+        <img src="assets/img/nailsTypes/postizas/img15.jpg" class= "imge up" alt="">
         <input type="button" name="" value="VER PRODUCTOS" class="vp postizas" id="postizas">
         </div>
-        <div>
-        <img src="assets/img/tip/imag15.jpg" class= "imge ut" alt="">
-        <input type="button" name="" value="VER PRODUCTOS" class="vp tip" id="tips">
+        <div class="img-box left">
+        <img src="assets/img/nailsTypes/tip/img15.jpg" class= "imge ut" alt="">
+        <input type="button" name="" value="VER PRODUCTOS" class="vp tip" id="tip">
         </div>
-        <div>
-        <img src="assets/img/normal/imagen10.jpg" class="imge un" alt="">
+        <div class="img-box">
+        <img src="assets/img/nailsTypes/normal/img10.jpg" class="imge un" alt="">
         <input type="button" name="" value="VER PRODUCTOS" class="vp normal" id="normal">
       </div>
     </div>
     <div id="modal">
       <div class="modal-content">
-        <span class="close" onclick="closem()">x</span>
-        <img id= "img01" class="modal-img">
-        <img id= "img02" class="modal-img">
-        <img id= "img02" class="modal-img">
+        <span id = "close" class="close">&times;</span>
+        <div class="content">
+          <div class="div-img">
+            <img id = "firstImg" class = "img-nail" alt="">
+          </div>
+          <div class="div-img">
+            <img id = "secondImg" class = "img-nail" alt="">
+          </div>
+          <div class="div-img">
+            <img id = "thirdImg" class = "img-nail" alt="">
+          </div>
+        </div>
+        <button class="left-button icon-circle-left" type="button" id = "leftButton"></button>
+        <button class="right-button icon-circle-right" type="button" id = "rightButton"></button>
       </div>
     </div>
 
-    <section class="portada">
-      <button class="left-button icon-circle-left" type="button" id = "leftButton"></button>
-      <button class="right-button icon-circle-right" type="button" id = "rightButton"></button>
-      <div class="portada-contenido">
-        <div class="div-img">
-          <img src="assets/img/portada/nails1.jpg" id = "firstImg" class = "img-nail" alt="">
-        </div>
-        <div class="div-img">
-          <img src="assets/img/portada/nails2.jpg" id = "secondImg" class = "img-nail" alt="">
-        </div>
-        <div class="div-img">
-          <img src="assets/img/portada/nails3.jpg" id = "thirdImg" class = "img-nail" alt="">
-        </div>
-      </div>
-    </section>
-    <script src="assets/js/portada.js" charset="utf-8"></script>
     <script src="assets/js/galeria.js"></script>
   </body>
 </html>
